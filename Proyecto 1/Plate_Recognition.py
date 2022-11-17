@@ -5,7 +5,7 @@ import numpy as np
 import imutils
 import easyocr
 
-image = cv.imread('Placa.png')
+image = cv.imread('Placa_carro.png')
 ig = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 plt.imshow(cv.cvtColor(ig, cv.COLOR_BGR2RGB))
 i_bf = cv.bilateralFilter(ig, 11, 17, 17) 
